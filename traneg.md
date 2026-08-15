@@ -27,9 +27,9 @@ layout: null
             <div class="dropdown">
                 <a href="#" style="font-size: 50px; font-family: 'Courier New', Courier, monospace; text-decoration: none; color: #928f84;">BLOG</a>
                 <div class="dropdown-content">
-                    <a href="traneg">Traneg</a>
-                    <a href="wieslawpiecigrod">Wiesław Pięcigród</a>
-                    <a href="opcja3">Opcja 3</a>
+                    <a href="traneg.html">Traneg</a>
+                    <a href="wieslawpiecigrod.html">Wiesław Pięcigród</a>
+                    <a href="opcja3.html">Opcja 3</a>
                 </div>
             </div>
             <a href="przyciski.html" style="font-size: 50px; font-family: 'Courier New', Courier, monospace; text-decoration: none; color: #000000;">PRZYCISKI</a>

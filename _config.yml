@@ -1,2 +1,2 @@
-permalink: /:categories/:title+/
+permalink: none
 exclude: [README.md]
