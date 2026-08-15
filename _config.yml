@@ -1,0 +1,4 @@
+theme: jekyll-theme-primer
+title: Chora psychiatrycznie Pięćdziesięciocentówka
+markdown: kramdown
+permalink: /:categories/:title+/

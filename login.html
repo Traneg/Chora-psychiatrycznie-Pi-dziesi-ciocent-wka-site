@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Style dla menu rozwijanego (Dropdown) */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #ffffff;
+            min-width: 250px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            top: 100%;
+            left: 0;
+        }
+
+        .dropdown-content a {
+            color: #000000 !important; /* Wymuszamy czarny kolor dla opcji */
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            font-size: 30px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Główny pasek nawigacji -->
+    <div class="container" style="display: flex; align-items: center; gap: 15px; margin: 10px;">
+        <img src="logo.jpeg" alt="Logo" style="width: 200px; height: 200px; object-fit: cover; border-radius: 50%;">
+        
+        <!-- Kontener trzymający wszystkie linki po prawej stronie -->
+        <div style="display: flex; gap: 30px; margin-left: auto; align-items: center;">
+            <a href="index.html" style="font-size: 50px; font-family: 'Courier New', Courier, monospace; text-decoration: none; color: #000000;">GŁÓWNA</a>
+            
+            <!-- Rozwijany BLOG -->
+            <div class="dropdown">
+                <a  style="font-size: 50px; font-family: 'Courier New', Courier, monospace; text-decoration: none; color: #000000;">BLOG</a>
+                <div class="dropdown-content">
+                    <a href="traneg.html">Traneg</a>
+                    <a href="wiesławpięcigród.html">Wiesław Pięcigród</a>
+                    <a href="opcja3.html">Opcja 3</a>
+                </div>
+            </div>
+
+            <a href="przyciski.html" style="font-size: 50px; font-family: 'Courier New', Courier, monospace; text-decoration: none; color: #000000;">PRZYCISKI</a>
+            <a href="DRIVE" style="font-size: 50px; font-family: 'Courier New', Courier, monospace; text-decoration: none; color: #000000;">ZDJĘCIA</a>
+            <a href="login.html" style="font-size: 50px; font-family: 'Courier New', Courier, monospace; text-decoration: none; color: #928f84;">LOGIN</a>
+        </div>
+    </div>
+
+    <h1 style="font-size: 100px; text-align: center; font-family: 'Courier New', Courier, monospace; margin-top: 50px;">Login</h1>
+
+
+    <!-- Stopka strony -->
+    <div class="container" style="background-color: #7c7c7c; width: 100%;">
+        <p style="font-size: 50px; text-align: center; font-family: 'Comic Neue'; margin: 0; padding: 20px 0;">
+            Trade mark. All rights reserved. Chora psychiatrycznie Pięćdziesięciocentówka
+        </p>
+    </div>
+
+</body>
+</html>
