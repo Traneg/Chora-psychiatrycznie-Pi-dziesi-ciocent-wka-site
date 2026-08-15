@@ -1,6 +1,7 @@
 ---
-layout: default
+layout: null
 ---
+
 
 
 <html lang="pl">
