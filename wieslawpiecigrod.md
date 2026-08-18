@@ -48,7 +48,8 @@ layout: null
                 <p style="font-size: 24px; color: #928f84; margin: 0;">{{ post.date | date: "%Y-%m-%d" }} | Autor: {{ post.author }}</p>
                 <h2 style="font-size: 40px; margin: 10px 0;"><a href="{{ post.url }}" style="color: #000000; text-decoration: none; font-weight: bold;">{{ post.title }}</a></h2>
                 <p style="font-size: 30px; color: #333;">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
-                <a href="{{ post.url }}" style="font-size: 26px; color: #928f84; text-decoration: underline;">Czytaj dalej...</a>
+                <a href="{{ post.url | relative_url }}" style="font-size: 26px; color: #928f84; text-decoration: underline;">Czytaj dalej...</a>
+
             </div>
         {% endfor %}
     </div>

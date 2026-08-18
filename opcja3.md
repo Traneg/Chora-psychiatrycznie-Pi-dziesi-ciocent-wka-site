@@ -73,7 +73,8 @@ layout: null
                     <a href="{{ post.url }}" style="color: #000000; text-decoration: none; font-weight: bold;">{{ post.title }}</a>
                 </h2>
                 <p style="font-size: 30px; color: #333;">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
-                <a href="{{ post.url }}" style="font-size: 26px; color: #928f84; text-decoration: underline;">Czytaj dalej...</a>
+                <a href="{{ post.url | relative_url }}" style="font-size: 26px; color: #928f84; text-decoration: underline;">Czytaj dalej...</a>
+
             </div>
         {% endif %}
     {% endfor %}
