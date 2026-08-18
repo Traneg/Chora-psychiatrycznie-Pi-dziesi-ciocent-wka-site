@@ -1,4 +1,4 @@
 url: "https://github.io"
 baseurl: "/Chora-psychiatrycznie-Pi-dziesi-clocent-wka-site"
-permalink: /:categories/:title.html
+permalink: /:title.html
 exclude: [README.md]
