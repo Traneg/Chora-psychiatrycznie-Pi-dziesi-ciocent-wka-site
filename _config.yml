@@ -1,4 +1,4 @@
-url: "https://github.io"
+url: "https://traneg.github.io"
 baseurl: "/Chora-psychiatrycznie-Pi-dziesi-clocent-wka-site"
-permalink: /posts/:year-:month-:day-:title.html
+permalink: /posts/:title.html
 exclude: [README.md]
