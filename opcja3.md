@@ -62,8 +62,11 @@ layout: null
     <h2 style="font-size: 50px; text-align: center; font-family: 'Courier New', Courier, monospace; margin-bottom: 50px;">BLOG OPCJA 3</h2>
 
     <!-- Środkowa sekcja z wpisami blogera -->
-    <div class="blog-posts-container">
-        {% for post in site.categories.autor3 %}
+<div class="blog-posts-container">
+    <!-- Przeszukujemy wszystkie posty -->
+    {% for post in site.posts %}
+        <!-- Sprawdzamy, czy autor wpisu to dokładnie: opcja3 -->
+        {% if post.author == "opcja3" %}
             <div class="post-item" style="border-bottom: 2px solid #7c7c7c; margin-bottom: 30px; padding-bottom: 20px;">
                 <p style="font-size: 24px; color: #928f84; margin: 0;">{{ post.date | date: "%Y-%m-%d" }} | Autor: {{ post.author }}</p>
                 <h2 style="font-size: 40px; margin: 10px 0;">
@@ -72,8 +75,10 @@ layout: null
                 <p style="font-size: 30px; color: #333;">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
                 <a href="{{ post.url }}" style="font-size: 26px; color: #928f84; text-decoration: underline;">Czytaj dalej...</a>
             </div>
-        {% endfor %}
-    </div>
+        {% endif %}
+    {% endfor %}
+</div>
+
 
     <!-- Stopka rozciągnięta prawidłowo na 100% szerokości na samym dole -->
     <div class="container" style="background-color: #7c7c7c; width: 100%; left: 0; right: 0; box-sizing: border-box;">
